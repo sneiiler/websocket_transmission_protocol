@@ -17,7 +17,7 @@
 #### 1. 下位机接收来自上位机的 ROI 范围指定指令
 
 **指令说明：** 上位机发送指令，指明雷达输出数据的ROI区域范围。配合雷达的ROI识别程序使用
-```json
+```
 {
     "data_type":"LIDAR-COMMAND-SINGLE-ROI-AREA",
     "data":{
@@ -50,7 +50,7 @@
 
 **指令说明：** 下位机（雷达）发送数据到上位机，输出原始扫描数据。配合雷达的串口透传程序 ` client_upload_origin_data.py ` 使用。
 
-```json
+```
 {
     "data_type": "LIDAR-DATA-ORIGIN-DATA",
     "data": {
@@ -71,7 +71,7 @@
 
 实际数据帧示例如下：
 
-```json
+```
 {
     "data_type": "LIDAR-DATA-ORIGIN-DATA",
     "data": {
@@ -83,7 +83,7 @@
 #### 3. 下位机发送ROI数据到上位机
 
 **指令说明：** 下位机发送数据到上位机，雷达输出ROI数据。配合雷达的ROI识别 ` client_detect_single_ROI.py ` 使用。
-```json
+```
 {
     "data_type": "LIDAR-DATA-SINGLE-ROI-AREA",
     "data": {
@@ -104,7 +104,7 @@
 
 实际数据帧示例如下（例如ROI参数： ROI_angle : [1, 6]，ROI_distance : [100, 220]）
 
-```json
+```
 {
     "data_type": "LIDAR-DATA-SINGLE-ROI-AREA",
     "data": {
