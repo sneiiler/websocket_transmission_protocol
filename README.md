@@ -88,7 +88,7 @@
     "data_type": "LIDAR-DATA-ORIGIN-DATA",
     "data": {
         "serialnumber": "serialnumber-xxx",
-        data: [ [angle, distance], [angle, distance], ..., [angle, distance] ]
+        "content": [ [angle, distance], [angle, distance], ..., [angle, distance] ]
     }
 }
 ```
@@ -101,7 +101,7 @@
 `data` : 数据体
 
 > `serialnumber` 雷达序列号，例如： `DEDE9AF2C1EA9FC2A2EB92F14D0D3C00`
->> `data` 数据内容为`[角度, 距离]` 列表。
+>> `content` 数据内容为`[角度, 距离]` 列表。
 
 
 #### 3. 下位机发送ROI数据到上位机
