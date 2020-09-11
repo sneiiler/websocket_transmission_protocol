@@ -80,6 +80,30 @@
 }
 ```
 
+---
+2020年9月11日 修改：
+
+```
+{
+    "data_type": "LIDAR-DATA-ORIGIN-DATA",
+    "data": {
+        "serialnumber": "serialnumber-xxx",
+        data: [ [angle, distance], [angle, distance], ..., [angle, distance] ]
+    }
+}
+```
+
+字段说明：
+
+`data_type` : 数据指令类型
+> " LIDAR-DATA-ORIGIN-DATA " : 该指令为下位机（雷达）发送数据到上位机，输出原始扫描数据。
+
+`data` : 数据体
+
+> `serialnumber` 雷达序列号，例如： `DEDE9AF2C1EA9FC2A2EB92F14D0D3C00`
+>> `data` 数据内容为`[角度, 距离]` 列表。
+
+
 #### 3. 下位机发送ROI数据到上位机
 
 **指令说明：** 下位机发送数据到上位机，雷达输出ROI数据。配合雷达的ROI识别 ` client_detect_single_ROI.py ` 使用。
